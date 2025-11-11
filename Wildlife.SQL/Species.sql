@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Species]
+(
+	[Id] INT NOT NULL PRIMARY KEY,
+	[Name] NVARCHAR(100) NOT NULL,
+	[ConservationStatus] NVARCHAR(50) NULL,
+	[Taggable] BIT NOT NULL DEFAULT 0
+)

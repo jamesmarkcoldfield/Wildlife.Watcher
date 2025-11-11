@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wildlife.Watcher", "Wildlife.Watcher\Wildlife.Watcher.csproj", "{98E9F13A-23C8-4AA0-B0F4-D6733E1C02CC}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Wildlife.SQL", "Wildlife.SQL\Wildlife.SQL.sqlproj", "{42EEB6C9-E4C1-4DD3-B7D9-921B040EA6B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{98E9F13A-23C8-4AA0-B0F4-D6733E1C02CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98E9F13A-23C8-4AA0-B0F4-D6733E1C02CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98E9F13A-23C8-4AA0-B0F4-D6733E1C02CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EEB6C9-E4C1-4DD3-B7D9-921B040EA6B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42EEB6C9-E4C1-4DD3-B7D9-921B040EA6B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42EEB6C9-E4C1-4DD3-B7D9-921B040EA6B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{42EEB6C9-E4C1-4DD3-B7D9-921B040EA6B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42EEB6C9-E4C1-4DD3-B7D9-921B040EA6B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42EEB6C9-E4C1-4DD3-B7D9-921B040EA6B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
