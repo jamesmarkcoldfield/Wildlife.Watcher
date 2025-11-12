@@ -23,6 +23,9 @@ jobs:
         with:
           dotnet-version: '9.x'
 
+      - name: Install SQL Build Tools
+        run: dotnet tool install -g Microsoft.Build.Sql.Tools
+
       - name: Build with dotnet
         run: dotnet build --configuration Release Wildlife.Watcher.Without.SQL.slnf
 
@@ -64,4 +67,5 @@ jobs:
           package: .
 
           
+
 
