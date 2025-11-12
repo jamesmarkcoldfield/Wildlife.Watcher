@@ -26,8 +26,8 @@ jobs:
       - name: Install SQL Build Tools
         run: dotnet tool install -g Microsoft.Build.Sql.Tools
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release Wildlife.Watcher.Without.SQL.slnf
+      - name: Build with dotnet # Build web app
+        run: dotnet build --configuration Release Wildlife.Watcher/Wildlife.Watcher.csproj
 
       - name: dotnet publish
         run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
@@ -67,5 +67,6 @@ jobs:
           package: .
 
           
+
 
 
