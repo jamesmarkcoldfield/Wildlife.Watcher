@@ -23,8 +23,8 @@ jobs:
         with:
           dotnet-version: '9.x'
 
-      - name: Install SQL Build Tools
-        run: dotnet tool install -g Microsoft.Build.Sql.Tools
+      #- name: Install SQL Build Tools
+        #run: dotnet tool install -g Microsoft.Build.Sql.Tools
 
       - name: Build with dotnet # Build web app
         run: dotnet build --configuration Release Wildlife.Watcher/Wildlife.Watcher.csproj
@@ -67,6 +67,7 @@ jobs:
           package: .
 
           
+
 
 
 
