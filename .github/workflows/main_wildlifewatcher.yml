@@ -23,8 +23,11 @@ jobs:
         with:
           dotnet-version: '9.x'
 
+      - name: Install SQL Build Tools
+        run: dotnet tool install -g Microsoft.Build.Sql.Tools
+
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration Release Wildlife.Watcher.Without.SQL.slnf
 
       - name: dotnet publish
         run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
@@ -62,4 +65,7 @@ jobs:
           app-name: 'wildlifewatcher'
           slot-name: 'Production'
           package: .
+
           
+
+
