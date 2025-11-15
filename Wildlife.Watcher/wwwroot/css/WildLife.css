@@ -1,0 +1,72 @@
+﻿body {
+}
+
+/* Each button + label is in its own column */
+.btn-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem; /* space between button and label */
+}
+
+/* Center container vertically and horizontally */
+.center-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Custom button style - fixed size, rounded, shadow, hover effect */
+.img-btn {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    border: none;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    background: none;
+}
+
+    .img-btn:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .img-btn:focus {
+        outline: 4px solid #0d6efd;
+        outline-offset: 4px;
+    }
+
+    .img-btn img {
+        width: calc(100% - 2rem);
+        height: calc(100% - 2rem);
+        object-position: center center;
+        width: 75%;
+        height: 75%;
+        object-fit: fill;
+        padding: 10px;
+        display: block;
+        margin: 1rem auto;
+    }
+
+//
+
+@media (max-width: 480px) {
+    .center-container {
+        gap: 2rem;
+    }
+
+    .img-btn {
+        width: 140px;
+        height: 140px;
+    }
+
+    .btn-label {
+        font-size: 1rem;
+    }
+}
